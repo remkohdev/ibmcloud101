@@ -4,7 +4,9 @@
    
 1. An IBM Cloud account,
 
-2. Install the [IBM Cloud Developer Tools CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your localhost,
+2. Download and install [curl](https://curl.haxx.se/download.html),
+
+3. Install the [IBM Cloud Developer Tools CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your localhost,
 
     ```console
     $ curl -sL https://ibm.biz/idt-installer | bash

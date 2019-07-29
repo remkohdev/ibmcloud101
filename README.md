@@ -67,7 +67,7 @@ The easiest and fastest way to deploy code to cloud is by using Serverless Funct
 # Labs
 
 * Lab0, Developer Setup - see [Lab0](Lab0/README.md),
-* Lab1, Get Started with IBM Watson using APIs - see [Lab1](Lab1/README.md),
+* Lab1, Get Started using IBM Watson APIs - see [Lab1](Lab1/README.md),
     * Visual Recognition
 * Lab2, Quickstart with Starter Kits - see [Lab2](Lab2/README.md),
     * How to deploy code to the Cloud
