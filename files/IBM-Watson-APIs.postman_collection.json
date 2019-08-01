@@ -1,0 +1,1172 @@
+{
+	"info": {
+		"_postman_id": "b482701c-9bd9-4afd-8ada-b6929e2fe4de",
+		"name": "IBM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Visual Recognition",
+			"item": [
+				{
+					"name": "General",
+					"item": [
+						{
+							"name": "/visualrecognition/v3/classify",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19&url=https://upload.wikimedia.org/wikipedia/commons/d/d1/Spaghetti_with_Meatballs_%28cropped%29.jpg&classifier_ids=food&owner=IBM",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classify"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "url",
+											"value": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Spaghetti_with_Meatballs_%28cropped%29.jpg"
+										},
+										{
+											"key": "classifier_ids",
+											"value": "food"
+										},
+										{
+											"key": "owner",
+											"value": "IBM"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/visualrecognition/v3/classify",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images_file",
+											"type": "file",
+											"src": "/Users/remkohdev@us.ibm.com/dev/src/github/remkohdev/cda/ibmcloud101/images/apis/spaghetti_with_meatballs.jpg"
+										},
+										{
+											"key": "threshold",
+											"value": "0.6",
+											"type": "text"
+										},
+										{
+											"key": "owners",
+											"value": "IBM",
+											"type": "text"
+										},
+										{
+											"key": "classifier_ids",
+											"value": "food",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classify"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Face",
+					"item": [
+						{
+							"name": "/visualrecognition/v3/detect_faces",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/detect_faces?version=2018-03-19&url=https://pbs.twimg.com/media/DLNtpwwXoAM9G_u.jpg",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"detect_faces"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "url",
+											"value": "https://pbs.twimg.com/media/DLNtpwwXoAM9G_u.jpg"
+										},
+										{
+											"key": "owners",
+											"value": "IBM",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/visualrecognition/v3/detect_faces",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images_file",
+											"type": "file",
+											"src": "/Users/remkohdev@us.ibm.com/dev/src/github/remkohdev/cda/ibmcloud101/images/apis/developer-couch.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/detect_faces?version=2018-03-19",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"detect_faces"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "owners",
+											"value": "IBM",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Custom",
+					"item": [
+						{
+							"name": "/visualrecognition/v3/classifiers",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classifiers?version=2018-03-19&verbose=true",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classifiers"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "verbose",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/visualrecognition/v3/classifiers",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classifiers?version=2018-03-19&verbose=true",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classifiers"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "verbose",
+											"value": "true"
+										},
+										{
+											"key": "owners",
+											"value": "IBM",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/visualrecognition/v3/classifiers/{id}",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classifiers/default?version=2018-03-19&verbose=true",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classifiers",
+										"default"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "verbose",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/visualrecognition/v3/classifiers/{id}",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classifiers/{{vr-new-classifier}}?version=2018-03-19&verbose=true",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classifiers",
+										"{{vr-new-classifier}}"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "verbose",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/visualrecognition/v3/classifiers/{id}",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{vr-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/visual-recognition/api/v3/classifiers/{{vr-new-classifier}}?version=2018-03-19&verbose=true",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"visual-recognition",
+										"api",
+										"v3",
+										"classifiers",
+										"{{vr-new-classifier}}"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-03-19"
+										},
+										{
+											"key": "verbose",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Core ML",
+					"item": [],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "User Data",
+					"item": [],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Tone Analyzer",
+			"item": [
+				{
+					"name": "/tone-analyzer",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{ta-apikey}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "apikey",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "apikey",
+								"value": "8FOEUDaR01oQLhn4XCa-pik37WqhhwjM8PHZdAv-brwC",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"text\": \"Team, I know that times are tough! Product sales have been disappointing for the past three quarters. We have a competitive product, but we need to do a better job of selling it!\"\n}"
+						},
+						"url": {
+							"raw": "https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21",
+							"protocol": "https",
+							"host": [
+								"gateway",
+								"watsonplatform",
+								"net"
+							],
+							"path": [
+								"tone-analyzer",
+								"api",
+								"v3",
+								"tone"
+							],
+							"query": [
+								{
+									"key": "version",
+									"value": "2017-09-21"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Language Translator",
+			"item": [
+				{
+					"name": "Translate",
+					"item": [
+						{
+							"name": "/translate",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"text\" : [\n\t\t\"Hello\"\n\t],\n\t\"model_id\" : \"en-es\"\n}"
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"translate"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Identification",
+					"item": [
+						{
+							"name": "/identifiable_languages",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/identifiable_languages?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"identifiable_languages"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/identify",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "Language translator translates text from one language to another"
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/identify?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"identify"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Models",
+					"item": [
+						{
+							"name": "/models",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/models?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"models"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Document translation",
+					"item": [
+						{
+							"name": "/documents",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/remkohdev@us.ibm.com/dev/src/github/remkohdev/cda/ibmcloud101/files/IBM-with-Red-Hat.pdf"
+										},
+										{
+											"key": "model_id",
+											"value": "en-nl",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/documents?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"documents"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/documents",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/documents?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"documents"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/documents/{doc_id}",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/documents/d9446b5e-c8f0-474e-bcd3-8548db4a029e?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"documents",
+										"d9446b5e-c8f0-474e-bcd3-8548db4a029e"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/documents/{doc_id}/translated_document",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{lt-apikey}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "apikey",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://gateway.watsonplatform.net/language-translator/api/v3/documents/d9446b5e-c8f0-474e-bcd3-8548db4a029e?version=2018-05-01",
+									"protocol": "https",
+									"host": [
+										"gateway",
+										"watsonplatform",
+										"net"
+									],
+									"path": [
+										"language-translator",
+										"api",
+										"v3",
+										"documents",
+										"d9446b5e-c8f0-474e-bcd3-8548db4a029e"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2018-05-01"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "App ID",
+			"item": [
+				{
+					"name": "/oauth/token - grant_type=client_credentials",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{appid-clientsecret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{appid-clientid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://us-south.appid.cloud.ibm.com/oauth/v4/7a19aee9-4785-4317-9d16-6889ba841cdf/token",
+							"protocol": "https",
+							"host": [
+								"us-south",
+								"appid",
+								"cloud",
+								"ibm",
+								"com"
+							],
+							"path": [
+								"oauth",
+								"v4",
+								"7a19aee9-4785-4317-9d16-6889ba841cdf",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/oauth/token - grant_type=password",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{appid-clientsecret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{appid-clientid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "remkohdev@us.ibm.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Vitamin@2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://us-south.appid.cloud.ibm.com/oauth/v4/7a19aee9-4785-4317-9d16-6889ba841cdf/token",
+							"protocol": "https",
+							"host": [
+								"us-south",
+								"appid",
+								"cloud",
+								"ibm",
+								"com"
+							],
+							"path": [
+								"oauth",
+								"v4",
+								"7a19aee9-4785-4317-9d16-6889ba841cdf",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

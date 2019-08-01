@@ -32,6 +32,8 @@ Platform-as-a-Service (PaaS) offers computing services like security, scalabilit
 
 [Kubernetes](https://kubernetes.io/) is a popular example of IaaS. Kubernetes is an open-source system automating deployment, scaling, and management of containerized applications like Docker containers. 
 
+PaaS can also provide just a runtime environment or middleware services.
+
 If you are a server-side, back-end or data engineer, you will likely use PaaS.
 
 ### Software-as-a-Service (SaaS)
@@ -68,7 +70,11 @@ The easiest and fastest way to deploy code to cloud is by using Serverless Funct
 
 * Lab0, Developer Setup - see [Lab0](Lab0/README.md),
 * Lab1, Get Started using IBM Watson APIs - see [Lab1](Lab1/README.md),
-    * Visual Recognition
+    * Visual Recognition,
+    * [Language Translator](https://cloud.ibm.com/catalog/services/language-translator),
 * Lab2, Quickstart with Starter Kits - see [Lab2](Lab2/README.md),
     * How to deploy code to the Cloud
+        * CloudFoundry
+        * Docker
+        * Toolchain
 * Lab3, Using Serverless Functions - see [Lab3](Lab3/README.md),
